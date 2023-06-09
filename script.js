@@ -116,7 +116,7 @@ const filterStudents = () => {
 
   const listStudent = document.getElementById("students_info");
 
-  const filteredNewListStudent = filteredStudents.map((student) => {
+  const newListStudent = filteredStudents.map((student) => {
 
     let button_active = "Active";
     let button_show = "Show Data";
@@ -147,8 +147,8 @@ const filterStudents = () => {
 
   });
 
-  console.log("newListStudent :>> ", filteredNewListStudent);
-  listStudent.innerHTML = filteredNewListStudent.join(" ");
+  console.log("newListStudent :>> ", newListStudent);
+  listStudent.innerHTML = newListStudent.join(" ");
 
 };
 
